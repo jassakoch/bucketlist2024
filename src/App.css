@@ -1,4 +1,16 @@
 .container {
   display: grid;
-  grid-template-rows: 1fr 4fr;
+  grid-template-columns: repeat (3, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  gap: 8px;
+}
+
+.image {
+  width: 600px;
+}
+
+
+.header {
+  grid-column: span 5 / span 5;
+  background-color: #F55A5A;
 }
