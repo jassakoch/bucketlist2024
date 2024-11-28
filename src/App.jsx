@@ -10,11 +10,13 @@ function App() {
  
   const cards = data.map(item => {
     return (
+     
       <Card 
 
       key={item.id}
       {...item}
       />
+     
     )
 })
 
@@ -23,9 +25,11 @@ function App() {
 
   return (
     
-      <div className='container'>
+      <div className='card-container'>
         <Nav/>
+        <div className='card-container'>
         {cards}
+        </div>
     </div>
   )
 }
